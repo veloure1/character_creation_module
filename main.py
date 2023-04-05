@@ -2,11 +2,11 @@ from random import randint
 
 from graphic_arts.start_game_banner import run_screensaver
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 36eab2f20e63f6494f036b2866e0cee6b66b8286
 def attack(char_name: str, char_class: str) -> str:
+    """According to the class of chosen character.
+    function will print randomized amount of damage.
+    """
     if char_class == 'warrior':
         return (f'{char_name} нанёс противнику урон, равный '
                 f'{5 + randint(3, 5)}')
@@ -19,6 +19,9 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
+    """According to the class of chosen character.
+    function will print randomized amount of dodged damage.
+    """
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} ед. урона')
     if char_class == 'mage':
@@ -28,6 +31,9 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
+    """According to the class of chosen character.
+    function will print random amount of used skill.
+    """
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение '
                 f'«Выносливость {80 + 25}»')
@@ -38,6 +44,9 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
+    """According to the chosen character.
+    user can choose to train or skip training.
+    """
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — великий мастер ближнего боя.')
     if char_class == 'mage':
@@ -62,6 +71,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
+    """User can choose one of three characters."""
     approve_choice: str = ''
     char_class: str = ''
     while approve_choice != 'y':
@@ -92,8 +102,4 @@ if __name__ == '__main__':
     print('Ты можешь выбрать один из трёх путей силы:')
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
-<<<<<<< HEAD
     print(start_training(char_name, char_class))
-=======
-    print(start_training(char_name, char_class))
->>>>>>> 36eab2f20e63f6494f036b2866e0cee6b66b8286
