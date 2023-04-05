@@ -2,7 +2,10 @@ from random import randint
 
 from graphic_arts.start_game_banner import run_screensaver
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36eab2f20e63f6494f036b2866e0cee6b66b8286
 def attack(char_name: str, char_class: str) -> str:
     if char_class == 'warrior':
         return (f'{char_name} нанёс противнику урон, равный '
@@ -89,4 +92,8 @@ if __name__ == '__main__':
     print('Ты можешь выбрать один из трёх путей силы:')
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
+<<<<<<< HEAD
     print(start_training(char_name, char_class))
+=======
+    print(start_training(char_name, char_class))
+>>>>>>> 36eab2f20e63f6494f036b2866e0cee6b66b8286
